@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entreprise de Maçonnerie</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #444;
+            padding: 10px 0;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            padding: 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+        .section-title {
+            text-align: center;
+            margin: 40px 0 20px;
+            font-size: 24px;
+            color: #333;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        .appointment {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .appointment button {
+            padding: 10px 20px;
+            font-size: 16px;
+            color: white;
+            background-color: #333;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .appointment button:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Entreprise de Maçonnerie</h1>
+    </header>
+    <nav>
+        <a href="#chantiers">Chantiers</a>
+        <a href="#rdv">Rendez-vous</a>
+    </nav>
+    <div class="container">
+        <section id="chantiers">
+            <h2 class="section-title">Nos Chantiers</h2>
+            <div class="gallery">
+                <img src="photo1.jpg" alt="Chantier 1">
+                <img src="photo2.jpg" alt="Chantier 2">
+                <img src="photo3.jpg" alt="Chantier 3">
+                <img src="photo4.jpg" alt="Chantier 4">
+            </div>
+        </section>
+        <section id="rdv">
+            <h2 class="section-title">Prendre Rendez-vous</h2>
+            <div class="appointment">
+                <p>Pour prendre rendez-vous, veuillez nous contacter au <strong>0123 456 789</strong> ou cliquer sur le bouton ci-dessous :</p>
+                <button>Contactez-nous</button>
+            </div>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2024 Entreprise de Maçonnerie. Tous droits réservés.</p>
+    </footer>
+</body>
+</html>
